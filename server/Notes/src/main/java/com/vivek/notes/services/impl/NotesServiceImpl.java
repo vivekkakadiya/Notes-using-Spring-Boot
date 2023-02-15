@@ -35,6 +35,7 @@ public class NotesServiceImpl implements NotesService {
 		
 		Notes notes=DtoToNotes(notesDto);
 		notes.setUser(user);
+		
 		Notes res=this.notesRepo.save(notes);
 		return this.NotesToDto(res);
 	}
@@ -87,6 +88,7 @@ public class NotesServiceImpl implements NotesService {
 		notesDto.setTitle(notes.getTitle());
 		notesDto.setDate(notes.getDate());
 		notesDto.setDescription(notes.getDescription());
+		notesDto.setUserDto(this.UserToDto(notes.getUser()));
 
 		return notesDto;
 	}
@@ -96,7 +98,6 @@ public class NotesServiceImpl implements NotesService {
 		notes.setTitle(notesDto.getTitle());
 		notes.setDate(notesDto.getDate());
 		notes.setDescription(notesDto.getDescription());
-
 		return notes;
 	}
 	

@@ -3,6 +3,7 @@ package com.vivek.notes.payload;
 import java.util.Date;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
+import com.vivek.notes.entities.User;
 
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -17,6 +18,7 @@ public class NotesDto {
 	private String Description;
 	@JsonFormat(pattern = "yyyy-MM-dd")
 	private Date date;
+	private UserDto userDto;
 
 	public Integer getID() {
 		return this.ID;
