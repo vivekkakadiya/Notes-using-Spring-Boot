@@ -1,0 +1,24 @@
+{
+  "name": "notes",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "client": "cd client && npm i && npm run build",
+    "server": "cd server/Notes && ./mvnw package && java -jar target/Notes-0.0.1-SNAPSHOT.jar",
+    "start": "concurrently \"npm run server\" \"npm run client\"",
+    "dev-client": "cd client && npm start",
+    "dev-server": "cd server/Notes && ./mvnw spring-boot:run",
+    "dev": "concurrently \"npm run dev-server\" \"npm run dev-client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vivekkakadiya/Notes-using-Spring-Boot.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vivekkakadiya/Notes-using-Spring-Boot/issues"
+  },
+  "homepage": "https://github.com/vivekkakadiya/Notes-using-Spring-Boot#readme"
+}

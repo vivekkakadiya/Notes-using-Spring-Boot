@@ -11,23 +11,26 @@ export const Addnote = ({show,handleClose,edit,data}) => {
     e.preventDefault();
     if (!title || !description) {
       alert("Title or Description cannot be blank");
-      if(edit){
-    }
-      const res = await fetch(`http://localhost:9090/api/notes/${data.id}`, {
-      method: "PUT",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({ title, description }),
-    });
+     
   }else {
-    const res = await fetch(`http://localhost:9090/api/notes/${sessionStorage.getItem("email")}`, {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({ title, description }),
-    });
+    if(edit){
+      const res = await fetch(`http://localhost:9090/api/notes/${data.id}`, {
+        method: "PUT",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ title, description }),
+      });
+    }else{
+
+      const res = await fetch(`http://localhost:9090/api/notes/${sessionStorage.getItem("email")}`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ title, description }),
+      });
+    }
   
     setDescription("");
     setTitle("");

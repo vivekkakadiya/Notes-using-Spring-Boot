@@ -13,24 +13,7 @@ export const Card = ({ id, title, desc , date}) => {
   const [title2, setTitle2] = useState(title);
   const [description, setDescription] = useState(desc);
   const data={"id":id,"title":title,"desc":desc}
-  const handleUpdate = async (e) => {
-    e.preventDefault();
-    if (!title2 || !description) {
-      alert("Title or Description cannot be blank");
-    }
-    const res = await fetch(`http://localhost:9090/api/notes/${id}`, {
-      method: "PUT",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({ title: title2, description }),
-    });
-
-    setDescription("");
-    setTitle2("");
-    navigate("/");
-    handleClose();
-  };
+  
 
 
 
