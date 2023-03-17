@@ -12,6 +12,13 @@ Getting Started
 -   Node.js and npm
 -   MySQL
 
+## Demo
+
+https://user-images.githubusercontent.com/84114759/225833545-56d450a9-723a-4777-ace9-126e8b0732f3.mp4
+
+
+
+
 ### Installation
 
 1.  Clone the repository:
