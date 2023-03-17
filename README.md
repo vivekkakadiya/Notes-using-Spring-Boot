@@ -43,7 +43,7 @@ Getting Started
 
     ```bash
 
-    java -jar target/spring-boot-react-notes-0.0.1-SNAPSHOT.jar
+    java -jar target/Notes-0.0.1-SNAPSHOT.jar
     ```
 
 5.  Install frontend dependencies:
