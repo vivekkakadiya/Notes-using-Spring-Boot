@@ -10,7 +10,7 @@ Getting Started
 
 -   Java 11 or higher
 -   Node.js and npm
--   PostgreSQL
+-   MySQL
 
 ### Installation
 
