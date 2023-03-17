@@ -36,7 +36,7 @@ Getting Started
 3.  Build the backend:
 
     ```bash
-
+    cd server
     ./mvnw package
     ```
 4.  Run the backend:
