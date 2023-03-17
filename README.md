@@ -24,7 +24,7 @@ Getting Started
 
 2.  Configure the database:
 
-    Create a new PostgreSQL database and update the configuration in `src/main/resources/application.properties`:
+    Create a new MySQL database and update the configuration in `src/main/resources/application.properties`:
 
     ```bash
 
