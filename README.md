@@ -1,4 +1,4 @@
-Spring Boot React Notes Project
+Notes Project Using Spring Boot And React
 ===============================
 
 This is a simple web application that allows users to create and manage their notes. It is built using Spring Boot as the backend and React as the frontend.
