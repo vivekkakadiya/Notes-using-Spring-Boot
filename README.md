@@ -83,5 +83,5 @@ Usage
 Contributing
 ------------
 
-Contributions are welcome! Please read the [contributing guidelines](https://chat.openai.com/CONTRIBUTING.md) before getting started.
+Contributions are welcome! Please read the [contributing guidelines](https://github.com/vivekkakadiya/Notes-using-Spring-Boot) before getting started.
 
