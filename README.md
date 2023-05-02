@@ -44,7 +44,7 @@ https://user-images.githubusercontent.com/84114759/225833545-56d450a9-723a-4777-
 3.  Build the backend:
 
     ```bash
-    cd server
+    cd server/Notes
     ./mvnw package
     ```
 4.  Run the backend:
